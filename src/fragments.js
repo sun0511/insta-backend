@@ -1,0 +1,3 @@
+export const COMMENT_FRAGMENT = 'fragment Commentparts on Comment{ id text user{ id username avatar } }'
+export const FULL_POST_FRAGMENT = 'fragment PostParts on Post{ id location caption files{  } comments{ fragment Commentparts on Comment{ id text user{ id username avatar } } } }'
+export const ROOM_FRAGMENT = 'fragment RoomParts on Room{ id participants{ id username avatar } messages{ id text to{ id username avatar } from{ id username avatar } } }'
